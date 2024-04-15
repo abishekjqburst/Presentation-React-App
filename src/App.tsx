@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import TypeAssertions from "./examples/TypeAssertions";
 import StringLiteral from "./examples/StringLiteral";
@@ -10,7 +9,7 @@ import AnyvsUnknown from "./examples/AnyvsUnknown";
 import TypevsInterface from "./examples/TypevsInterface";
 import Generics from "./examples/Generics";
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <div>
       <h1>React App with TypeScript Features</h1>
