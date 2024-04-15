@@ -8,10 +8,8 @@ const IntersectionType = () => {
     fly: () => string;
   };
 
-  // Define an intersection type
   type FlyingBird = Animal & Bird;
 
-  // Create an object that satisfies the FlyingBird type
   const eagle: FlyingBird = {
     name: "Eagle",
     fly: () => "Flying high",
@@ -19,8 +17,8 @@ const IntersectionType = () => {
 
   return (
     <>
-      <p>Name:, {eagle.name}</p>
-      <p>{eagle.fly()}</p>
+      <p>Name: {eagle.name}</p>
+      <p>Move: {eagle.fly()}</p>
     </>
   );
 };

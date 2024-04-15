@@ -1,21 +1,14 @@
 const StringLiteral = () => {
-  // Define a type using string literals
-  type Direction = "left" | "right" | "up" | "down";
+  type Endpoint = "/api/get" | "/api/set" | "/api/delete" | "/api/edit";
 
-  // Function that takes a Direction type parameter
-  function move(direction: Direction): string {
-    return `Moving ${direction}`;
+  function api_call(direction: Endpoint): string {
+    return `${direction}`;
   }
-
-  // Calling the function with allowed string literal values
-
-  // This will cause a TypeScript error because "forward" is not one of the allowed values
-  // move("forward");
 
   return (
     <>
-      <p>{move("left")}</p>
-      <p>{move("up")}</p>
+      <p>Api Call goes to: {api_call("/api/get")}</p>
+      {/* <p>Api Call goes to: {api_call("/api/call")}</p> */}
     </>
   );
 };

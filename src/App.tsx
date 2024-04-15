@@ -15,14 +15,14 @@ const App: React.FC = () => {
     <div>
       <h1>React App with TypeScript Features</h1>
       <TypeAssertions />
-      {/* <StringLiteral />
+      <StringLiteral />
       <NumericLiteral />
       <BooleanLiteral />
       <UnionType />
       <IntersectionType />
       <AnyvsUnknown />
       <TypevsInterface />
-      <Generics /> */}
+      <Generics />
     </div>
   );
 };

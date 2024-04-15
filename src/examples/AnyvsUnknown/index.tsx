@@ -1,18 +1,17 @@
 const AnyvsUnknown = () => {
-  // Using 'any' type
   let myAny: any;
-  myAny = 123; // Works fine
-  myAny = "Hello"; // Works fine
+  myAny = 123;
+  myAny = "Hello";
 
   // Using 'unknown' type
   let myUnknown: unknown;
-  myUnknown = 123; // Works fine
-  myUnknown = "Hello"; // Works fine
+  myUnknown = 123;
+  myUnknown = "Hello";
 
   return (
     <>
-      <p>{myAny.foo()}</p>
-      <p>{myUnknown.foo()}</p>
+      {/* <p>{myAny.foo()}</p> */}
+      {/* <p>{myUnknown.foo()}</p> */}
     </>
   );
 };
